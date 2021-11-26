@@ -31,11 +31,6 @@ class OrderController extends Controller
 
     public function index()
     {
-        $client = \RetailCrm\Api\Factory\SimpleClientFactory::createClient('https://superposuda.retailcrm.ru/', 'QlnRWTTWw9lv3kjxy1A8byjUmBQedYqb');
-        $response = $client->orders->list();
-
-        dd($response);
-
         return view('order.create');
     }
 
